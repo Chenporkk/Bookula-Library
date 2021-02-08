@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis' , sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("https://thumbs.dreamstime.com/b/book-flower-vintage-wooden-table-background-top-view-old-91461016.jpg");
+}
+.first{
+    width: 80%;
+    margin: auto;
+
+}
+.second{
+    margin: 35px auto;
+    display: flex;
+    align-items: center;
+}
+ul {
+    flex: 1;
+    text-align: right;
+}
+ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 25px;
+}
+ul li a{
+    text-decoration: none;
+    color: #000;
+    padding: 0 10px;
+    position: relative;
+}
+ul li a::after{
+    content: '';
+    width: 0px;
+    height: 10px;
+    background: #f14a60;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -41px;
+    transition: 0.6s;
+}
+ul li a:hover::after{
+    width: 100%;
+}
+.banner{
+    display: flex;
+    margin-top: 80px;
+}  
+.container {
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.container .box {
+    position: relative;
+    width: 290px;
+    background: #fff;
+    padding: 100px 50px 60px;
+    box-shadow: 0 15px 45px rgb(0,0,0,.4);  
+}
+.container .box h2 {
+    position: absolute;
+    left: 40px;
+    top: 60px;
+    font-size: 4rem;
+    font-weight: 180pz;
+    z-index: 1;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.container .box:hover h2{
+    opacity: 1;
+    color: #fff;
+    transform: translateY(-40px);
+}
+
